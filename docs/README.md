@@ -4,13 +4,13 @@
 |-------------------------------	|----	|----------------------------------	|----	|----------------------	|---	|
 | Manual brightnes              	|  + 	| Battery lifetime > 24h from 100% 	|  + 	| Automatic brightness  |  - 	|
 | No reboot needed for 1 week      	|  - 	| Fingerprint reader  	                |  - 	| Waydroid		|  -	|
-| Torchlight                    	|  - 	| Boot into UI                     	|  + 	| GPS                 	|  +- 	|
+| Torchlight                    	|  -- 	| Boot into UI                     	|  + 	| GPS                 	|  +- 	|
 | Vibration                     	|  + 	| Hardware video playback          	|  + 	| Proximity          	|  - 	|
-| Flashlight                    	|  - 	| Anbox patches                    	|  + 	| Rotation            	|  + 	|
-| Photo                         	|  - 	| AppArmor patches                 	|  + 	| Touchscreen          	|  + 	|
-| Video                         	|  - 	| Battery percentage               	|  + 	| Earphones           	|  +- 	|
-| Switching between cameras     	|  - 	| Offline charging                 	|  - 	| Loudspeaker          	|  + 	|
-| Dual SIM functionality        	|  - 	| Online charging                  	|  + 	| Microphone          	|  + 	|
+| Flashlight                    	|  -- 	| Anbox patches                    	|  + 	| Rotation            	|  + 	|
+| Photo                         	|  -- 	| AppArmor patches                 	|  + 	| Touchscreen          	|  + 	|
+| Video                         	|  -- 	| Battery percentage               	|  + 	| Earphones           	|  +- 	|
+| Switching between cameras     	|  -- 	| Offline charging                 	|  - 	| Loudspeaker          	|  + 	|
+| Dual SIM functionality        	|  -- 	| Online charging                  	|  + 	| Microphone          	|  + 	|
 | Carrier info, signal strength 	|  +- 	| SD card detection and access     	|  + 	| Volume control       	|  + 	|
 | Data connection               	|  +- 	| RTC time                         	|  + 	| Pin unlock           	|  + 	|
 | Incoming, outgoing calls      	|  + 	| Shutdown / Reboot                	|  + 	| ADB access          	|  - 	|
@@ -23,7 +23,7 @@
 - **+-** *Working to some extent but with issues.*
 - **-** *Not Working.*
 - **?** *Not tested.*
-
+- **--** *Global issue*
 ## Requirements
 
 - Android 10 firmware for your device:
@@ -34,6 +34,7 @@
 - Download the latest rootfs:  [droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip](https://github.com/droidian-images/rootfs-api29gsi-all/releases).
 - Download the adaptation package: [droidian-adaptation-garden.zip](https://bardia.tech/droidian/droidian-adaptation-garden.zip).
 - Download [boot.img](https://bardia.tech/droidian/boot-dandelion.img), [dtbo.img](https://bardia.tech/droidian/dtbo-dandelion.img), [vbmeta.img](https://bardia.tech/droidian/vbmeta-dandelion.img).
+- Download our customized version of OrangeFox recovery [OrangeFox-R11-garden-droidian.img](https://bardia.tech/droidian/OrangeFox-R11-garden-droidian.img)
 
 ## angelica
 - Download the latest rootfs:  [droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip](https://github.com/droidian-images/rootfs-api29gsi-all/releases).
@@ -44,7 +45,7 @@
 - Flash boot.img: `fastboot flash boot boot.img`.
 - Flash dtbo.img: `fastboot flash dtbo dtbo.img`.
 - Flash vbmeta.img: `fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img`.
-- Flash your favorite recovery.
+- Flash OrangeFox-R11-garden-droidian.img: `fastboot flash recovery OrangeFox-R11-garden-droidian.img`.
 - Format userdata as ext4 from inside the recovery or via fastboot: `fastboot format:ext4 userdata`.
 
 - Sideload droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip.
@@ -70,6 +71,8 @@
 - Earbuds work on both devices but earphones do not work on dandelion but work on angelica.
 - Dual SIM functionality is currently not implemented in Phosh so only one SIM works at the moment.
 - Just like bluetooth, hotspot does not work from settings either and has to be used from a GUI application (such as the default advanced network app) or from terminal.
+
+## Final notes
 - I'm not responsible for bricked devices, dead SD cards, thermonuclear war, or you getting fired because the alarm app failed.
 - Please do some research if you have any concerns about features included in the products you find here before flashing it!
 - YOU are choosing to make these modifications, and if you point the finger at me for messing up your device, I will laugh at you.
