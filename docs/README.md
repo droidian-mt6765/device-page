@@ -24,30 +24,40 @@
 - **-** *Not Working.*
 - **?** *Not tested.*
 - **--** *Global issue*
-## Requirements
 
+## Requirements
 - Android 10 firmware for your device:
   - Redmi 9A dandelion: [LINK](https://xiaomifirmwareupdater.com/archive/miui/dandelion/).
   - Redmi 9C angelica: [LINK](https://xiaomifirmwareupdater.com/archive/miui/angelica/).
 
-## dandelion
+## Dandelion
 - Download the latest rootfs:  [droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip](https://github.com/droidian-images/rootfs-api29gsi-all/releases).
 - Download the adaptation package: [droidian-adaptation-garden.zip](https://bardia.tech/droidian/droidian-adaptation-garden.zip).
-- Download [boot.img](https://bardia.tech/droidian/boot-dandelion.img), [dtbo.img](https://bardia.tech/droidian/dtbo-dandelion.img), [vbmeta.img](https://bardia.tech/droidian/vbmeta-dandelion.img).
+- Download [boot-dandelion.img](https://bardia.tech/droidian/boot-dandelion.img), [dtbo-dandelion.img](https://bardia.tech/droidian/dtbo-dandelion.img), [vbmeta-dandelion.img](https://bardia.tech/droidian/vbmeta-dandelion.img).
 - Download our customized version of OrangeFox recovery [OrangeFox-R11-garden-droidian.img](https://bardia.tech/droidian/OrangeFox-R11-garden-droidian.img)
 
-## angelica
+## Angelica
 - Download the latest rootfs:  [droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip](https://github.com/droidian-images/rootfs-api29gsi-all/releases).
 - Download the adaptation package: [droidian-adaptation-garden.zip](https://bardia.tech/droidian/droidian-adaptation-garden.zip).
-- Download [boot.img](https://bardia.tech/droidian/boot-angelica.img), [dtbo.img](https://bardia.tech/droidian/dtbo-angelica.img), [vbmeta.img](https://bardia.tech/droidian/vbmeta-angelica.img).
+- Download [boot-dandelion.img](https://bardia.tech/droidian/boot-angelica.img), [dtbo-dandelion.img](https://bardia.tech/droidian/dtbo-angelica.img), [vbmeta-dandelion.img](https://bardia.tech/droidian/vbmeta-angelica.img).
 
-## Installation
-- Flash boot.img: `fastboot flash boot boot.img`.
-- Flash dtbo.img: `fastboot flash dtbo dtbo.img`.
-- Flash vbmeta.img: `fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img`.
+## Dandelion installation
+- Flash boot-dandelion.img: `fastboot flash boot boot-dandelion.img`.
+- Flash dtbo-dandelion.img: `fastboot flash dtbo dtbo-dandelion.img`.
+- Flash vbmeta-dandelion.img: `fastboot --disable-verity --disable-verification flash vbmeta vbmeta-dandelion.img`.
 - Flash OrangeFox-R11-garden-droidian.img: `fastboot flash recovery OrangeFox-R11-garden-droidian.img`.
 - Format userdata as ext4 from inside the recovery or via fastboot: `fastboot format:ext4 userdata`.
+- Sideload droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip.
+- Sideload droidian-adaptation-garden.zip
+- Now boot into your device.
+- *The first boot will take a while.*
 
+## Angelica installation
+- Flash boot-angelica.img: `fastboot flash boot boot-angelica.img`.
+- Flash dtbo-angelica.img: `fastboot flash dtbo dtbo-angelica.img`.
+- Flash vbmeta-dandelion.img: `fastboot --disable-verity --disable-verification flash vbmeta vbmeta-angelica.img`.
+- Flash OrangeFox-R11-garden-droidian.img: `fastboot flash recovery OrangeFox-R11-garden-droidian.img`.
+- Format userdata as ext4 from inside the recovery or via fastboot: `fastboot format:ext4 userdata`.
 - Sideload droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip.
 - Sideload droidian-adaptation-garden.zip
 - Now boot into your device.
