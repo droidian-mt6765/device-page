@@ -77,11 +77,11 @@
 - Mobile data might stop working after making or recieving phone calls. Toggle Mobile Data from the settins off/on.
 - Mobile data quick toggle doesn't work.
 - Bluetooth can be used via the terminal using bluetoothctl command or using blueman **sudo apt install blueman** but does not work via the settings app.
-- GPS works partially via Epiphany (tested with open street map)
+- GPS works partially via Epiphany (tested with open street map).
 - Signal strengh is reported at 1% but Mobile data and calls work just fine.
 - Anything related to cameras do not work it is a global issue across all devices, it does however work in Waydroid which is currently not available on angelica and dandelion.
 - Changing audio to speaker in calls does not work on dandelion but works on angelica.
-- Earbuds work on both devices but earphones do not work on dandelion but work on angelica.
+- When a headphone is plugged in audio output must be changed manually in the settings.
 - Dual SIM functionality is currently not implemented in Phosh so only one SIM works at the moment.
 - Just like bluetooth, hotspot does not work from settings either and has to be used from a GUI application (such as the default advanced network app) or from terminal.
 
