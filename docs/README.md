@@ -32,14 +32,15 @@
 
 ## Dandelion
 - Download the latest rootfs:  [droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip](https://github.com/droidian-images/rootfs-api29gsi-all/releases).
-- Download the adaptation package: [droidian-adaptation-garden.zip](https://bardia.tech/droidian/droidian-adaptation-garden.zip).
-- Download [boot-dandelion.img](https://bardia.tech/droidian/boot-dandelion.img), [dtbo-dandelion.img](https://bardia.tech/droidian/dtbo-dandelion.img), [vbmeta-dandelion.img](https://bardia.tech/droidian/vbmeta-dandelion.img).
-- Download our customized version of OrangeFox recovery [OrangeFox-R11-garden-droidian.img](https://bardia.tech/droidian/OrangeFox-R11-garden-droidian.img)
+- Download the adaptation package: [adaptation-droidian-garden.zip](https://garden.bardia.tech/adaptation-droidian-garden.zip).
+- Download [boot-dandelion.img](https://garden.bardia.tech/boot-dandelion.img), [dtbo-dandelion.img](https://garden.bardia.tech/dtbo-dandelion.img), [vbmeta-dandelion.img](https://garden.bardia.tech/vbmeta-dandelion.img).
+- Download our customized version of OrangeFox recovery [OrangeFox-R11-garden-droidian.img](https://garden.bardia.tech/OrangeFox-R11-garden-droidian.img)
 
 ## Angelica
 - Download the latest rootfs:  [droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip](https://github.com/droidian-images/rootfs-api29gsi-all/releases).
-- Download the adaptation package: [droidian-adaptation-garden.zip](https://bardia.tech/droidian/droidian-adaptation-garden.zip).
-- Download [boot-dandelion.img](https://bardia.tech/droidian/boot-angelica.img), [dtbo-dandelion.img](https://bardia.tech/droidian/dtbo-angelica.img), [vbmeta-dandelion.img](https://bardia.tech/droidian/vbmeta-angelica.img).
+- Download the adaptation package: [adaptation-droidian-garden.zip](https://garden.bardia.tech/adaptation-droidian-garden.zip).
+- Download [boot-dandelion.img](https://garden.bardia.tech/boot-angelica.img), [dtbo-dandelion.img](https://garden.bardia.tech/dtbo-angelica.img), [vbmeta-dandelion.img](https://garden.bardia.tech/vbmeta-angelica.img).
+- Download our customized version of OrangeFox recovery [OrangeFox-R11-garden-droidian.img](https://garden.bardia.tech/OrangeFox-R11-garden-droidian.img)
 
 ## Dandelion installation
 - Flash boot-dandelion.img: `fastboot flash boot boot-dandelion.img`.
@@ -47,8 +48,9 @@
 - Flash vbmeta-dandelion.img: `fastboot --disable-verity --disable-verification flash vbmeta vbmeta-dandelion.img`.
 - Flash OrangeFox-R11-garden-droidian.img: `fastboot flash recovery OrangeFox-R11-garden-droidian.img`.
 - Format userdata as ext4 from inside the recovery or via fastboot: `fastboot format:ext4 userdata`.
-- Sideload droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip.
-- Sideload droidian-adaptation-garden.zip
+- Now boot into recovery.
+- Go into sideload mode and sideload droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip: `adb sideload droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip`
+- Go into sideload mode and sideload adaptation-droidian-garden.zip: `adb sideload adaptation-droidian-garden.zip`
 - Now boot into your device.
 - *The first boot will take a while.*
 
@@ -58,8 +60,9 @@
 - Flash vbmeta-dandelion.img: `fastboot --disable-verity --disable-verification flash vbmeta vbmeta-angelica.img`.
 - Flash OrangeFox-R11-garden-droidian.img: `fastboot flash recovery OrangeFox-R11-garden-droidian.img`.
 - Format userdata as ext4 from inside the recovery or via fastboot: `fastboot format:ext4 userdata`.
-- Sideload droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip.
-- Sideload droidian-adaptation-garden.zip
+- Now boot into recovery.
+- Go into sideload mode and sideload droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip: `adb sideload droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip`
+- Go into sideload mode and sideload adaptation-droidian-garden.zip: `adb sideload adaptation-droidian-garden.zip`
 - Now boot into your device.
 - *The first boot will take a while.*
 
