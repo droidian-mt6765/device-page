@@ -3,13 +3,13 @@
 |                               	|    	|                                  	|    	|                      	|   	|
 |-------------------------------	|----	|----------------------------------	|----	|----------------------	|---	|
 | Manual brightnes              	|  ✅ 	| Battery lifetime > 24h from 100% 	|  ✅ 	| Automatic brightness  |  ✖️ 	|
-| No reboot needed for 1 week      	|  ✖️ 	| Fingerprint reader  	                |  ✖️ 	| Waydroid		|  ✖️	|
+| No reboot needed for 1 week      	|  ✅	| Fingerprint reader  	                |  ✖️ 	| Waydroid		|  ✖️	|
 | Torchlight                    	|  ✖️✖️ 	| Boot into UI                     	|  ✅ 	| GPS                 	|  ✅✖️ 	|
 | Vibration                     	|  ✅ 	| Hardware video playback          	|  ✅ 	| Proximity          	|  ✖️ 	|
 | Flashlight                    	|  ✖️✖️ 	| Anbox patches                    	|  ✅ 	| Rotation            	|  ✅ 	|
 | Photo                         	|  ✖️✖️ 	| AppArmor patches                 	|  ✅ 	| Touchscreen          	|  ✅ 	|
 | Video                         	|  ✖️✖️ 	| Battery percentage               	|  ✅ 	| Earphones           	|  ✅✖️ 	|
-| Switching between cameras     	|  ✖️✖️ 	| Offline charging                 	|  ✖️ 	| Loudspeaker          	|  ✅ 	|
+| Switching between cameras     	|  ✖️✖️ 	| Offline charging                 	|  ✅ 	| Loudspeaker          	|  ✅ 	|
 | Dual SIM functionality        	|  ✖️✖️	| Online charging                  	|  ✅ 	| Microphone          	|  ✅ 	|
 | Carrier info, signal strength 	|  ✅✖️ 	| SD card detection and access     	|  ✅ 	| Volume control       	|  ✅ 	|
 | Data connection               	|  ✅✖️ 	| RTC time                         	|  ✅ 	| Pin unlock           	|  ✅ 	|
