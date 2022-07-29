@@ -52,6 +52,14 @@
 - Go into sideload mode and sideload droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip: `adb sideload droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip`
 - Go into sideload mode and sideload adaptation-droidian-garden.zip: `adb sideload adaptation-droidian-garden.zip`
 - Now boot into your device.
+- If for some reason sideload or recovery did not work out for you should try my second installation method:
+- Download the adaptation script (not the adaptation package): [adaptation-garden-script.zip] (https://garden.bardia.tech/adaptation-garden-script.zip).
+- Download PBRP: [PBRP-3.1.0.img] (https://garden.bardia.tech/PBRP-3.1.0.img)
+- Flash PBRP-3.1.0.img: `fastboot flash recovery PBRP-3.1.0.img`.
+- Now boot into recovery
+- Now extract adaptation-garden-script.zip on your PC/Laptop and push it to your device: adb push adaptation-surya-script /tmp
+- Change directory to /tmp and run the script: cd /tmp/adaptation-garden-script && chmod +x install.sh && ./install.sh
+- Now boot into your device.
 - *The first boot will take a while.*
 
 ## Angelica installation
@@ -63,6 +71,14 @@
 - Now boot into recovery.
 - Go into sideload mode and sideload droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip: `adb sideload droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip`
 - Go into sideload mode and sideload adaptation-droidian-garden.zip: `adb sideload adaptation-droidian-garden.zip`
+- Now boot into your device.
+- If for some reason sideload or recovery did not work out for you should try my second installation method: 
+- Download the adaptation script (not the adaptation package): [adaptation-garden-script.zip] (https://garden.bardia.tech/adaptation-garden-script.zip).
+- Download PBRP: [PBRP-3.1.0.img] (https://garden.bardia.tech/PBRP-3.1.0.img)
+- Flash PBRP-3.1.0.img: `fastboot flash recovery PBRP-3.1.0.img`.
+- Now boot into recovery 
+- Now extract adaptation-garden-script.zip on your PC/Laptop and push it to your device: adb push adaptation-surya-script /tmp
+- Change directory to /tmp and run the script: cd /tmp/adaptation-garden-script && chmod +x install.sh && ./install.sh
 - Now boot into your device.
 - *The first boot will take a while.*
 
