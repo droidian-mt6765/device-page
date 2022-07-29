@@ -57,7 +57,7 @@
 - Download PBRP: [PBRP-3.1.0.img] (https://garden.bardia.tech/PBRP-3.1.0.img)
 - Flash PBRP-3.1.0.img: `fastboot flash recovery PBRP-3.1.0.img`.
 - Now boot into recovery
-- Now extract adaptation-garden-script.zip on your PC/Laptop and push it to your device: adb push adaptation-surya-script /tmp
+- Now extract adaptation-garden-script.zip on your PC/Laptop and push it to your device: adb push adaptation-garden-script /tmp
 - Change directory to /tmp and run the script: cd /tmp/adaptation-garden-script && chmod +x install.sh && ./install.sh
 - Now boot into your device.
 - *The first boot will take a while.*
@@ -77,7 +77,7 @@
 - Download PBRP: [PBRP-3.1.0.img] (https://garden.bardia.tech/PBRP-3.1.0.img)
 - Flash PBRP-3.1.0.img: `fastboot flash recovery PBRP-3.1.0.img`.
 - Now boot into recovery 
-- Now extract adaptation-garden-script.zip on your PC/Laptop and push it to your device: adb push adaptation-surya-script /tmp
+- Now extract adaptation-garden-script.zip on your PC/Laptop and push it to your device: adb push adaptation-garden-script /tmp
 - Change directory to /tmp and run the script: cd /tmp/adaptation-garden-script && chmod +x install.sh && ./install.sh
 - Now boot into your device.
 - *The first boot will take a while.*
