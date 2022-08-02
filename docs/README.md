@@ -43,6 +43,9 @@
 - Download our customized version of OrangeFox recovery [OrangeFox-R11-garden-droidian.img](https://garden.bardia.tech/OrangeFox-R11-garden-droidian.img)
 
 ## Dandelion installation
+- Erase system partiiton: `fastboot erase system`
+- Erase product partition: `fastboot erase product`
+- Resize product partition: `fastboot resize-logical-partition product 170000`
 - Flash boot-dandelion.img: `fastboot flash boot boot-dandelion.img`.
 - Flash dtbo-dandelion.img: `fastboot flash dtbo dtbo-dandelion.img`.
 - Flash vbmeta-dandelion.img: `fastboot --disable-verity --disable-verification flash vbmeta vbmeta-dandelion.img`.
@@ -63,6 +66,9 @@
 - *The first boot will take a while.*
 
 ## Angelica installation
+- Erase system partiiton: `fastboot erase system`
+- Erase product partition: `fastboot erase product`
+- Resize product partition: `fastboot resize-logical-partition product 170000`
 - Flash boot-angelica.img: `fastboot flash boot boot-angelica.img`.
 - Flash dtbo-angelica.img: `fastboot flash dtbo dtbo-angelica.img`.
 - Flash vbmeta-dandelion.img: `fastboot --disable-verity --disable-verification flash vbmeta vbmeta-angelica.img`.
