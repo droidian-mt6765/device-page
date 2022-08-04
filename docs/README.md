@@ -31,13 +31,13 @@
   - Redmi 9C angelica: [LINK](https://xiaomifirmwareupdater.com/archive/miui/angelica/).
 
 ## Dandelion
-- Download the latest rootfs:  [droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip](https://github.com/droidian-images/rootfs-api29gsi-all/releases).
+- Download the latest rootfs:  [droidian-OFFICIAL-phosh-phone-rootfs-api29-armhf-nightly_XXXXXXXX.zip](https://github.com/droidian-images/droidian/releases/tag/nightly).
 - Download the adaptation package: [adaptation-droidian-garden.zip](https://garden.bardia.tech/adaptation-droidian-garden.zip).
 - Download [boot-dandelion.img](https://garden.bardia.tech/boot-dandelion.img), [dtbo-dandelion.img](https://garden.bardia.tech/dtbo-dandelion.img), [vbmeta-dandelion.img](https://garden.bardia.tech/vbmeta-dandelion.img).
 - Download our customized version of OrangeFox recovery [OrangeFox-R11-garden-droidian.img](https://garden.bardia.tech/OrangeFox-R11-garden-droidian.img)
 
 ## Angelica
-- Download the latest rootfs:  [droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip](https://github.com/droidian-images/rootfs-api29gsi-all/releases).
+- Download the latest rootfs:  [droidian-OFFICIAL-phosh-phone-rootfs-api29-armhf-nightly_XXXXXXXX.zip](https://github.com/droidian-images/droidian/releases/tag/nightly).
 - Download the adaptation package: [adaptation-droidian-garden.zip](https://garden.bardia.tech/adaptation-droidian-garden.zip).
 - Download [boot-dandelion.img](https://garden.bardia.tech/boot-angelica.img), [dtbo-dandelion.img](https://garden.bardia.tech/dtbo-angelica.img), [vbmeta-dandelion.img](https://garden.bardia.tech/vbmeta-angelica.img).
 - Download our customized version of OrangeFox recovery [OrangeFox-R11-garden-droidian.img](https://garden.bardia.tech/OrangeFox-R11-garden-droidian.img)
@@ -49,7 +49,7 @@
 - Flash OrangeFox-R11-garden-droidian.img: `fastboot flash recovery OrangeFox-R11-garden-droidian.img`.
 - Format userdata as ext4 from inside the recovery or via fastboot: `fastboot format:ext4 userdata`.
 - Now boot into recovery.
-- Go into sideload mode and sideload droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip: `adb sideload droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip`
+- Go into sideload mode and sideload droidian-OFFICIAL-phosh-phone-rootfs-api29-armhf-nightly_XXXXXXXX.zip: `adb sideload droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip`
 - Go into sideload mode and sideload adaptation-droidian-garden.zip: `adb sideload adaptation-droidian-garden.zip`
 - Now boot into your device.
 - If for some reason sideload or recovery did not work out for you should try my second installation method:
@@ -69,7 +69,7 @@
 - Flash OrangeFox-R11-garden-droidian.img: `fastboot flash recovery OrangeFox-R11-garden-droidian.img`.
 - Format userdata as ext4 from inside the recovery or via fastboot: `fastboot format:ext4 userdata`.
 - Now boot into recovery.
-- Go into sideload mode and sideload droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip: `adb sideload droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip`
+- Go into sideload mode and sideload droidian-OFFICIAL-phosh-phone-rootfs-api29-armhf-nightly_XXXXXXXX.zip: `adb sideload droidian-rootfs-api29gsi-arm64-xxxxxxxx.zip`
 - Go into sideload mode and sideload adaptation-droidian-garden.zip: `adb sideload adaptation-droidian-garden.zip`
 - Now boot into your device.
 - If for some reason sideload or recovery did not work out for you should try my second installation method: 
