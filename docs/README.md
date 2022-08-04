@@ -4,9 +4,9 @@
 |-------------------------------	|----	|----------------------------------	|----	|----------------------	|---	|
 | Manual brightnes              	|  ✅ 	| Battery lifetime > 24h from 100% 	|  ✅ 	| Automatic brightness  |  ✖️ 	|
 | No reboot needed for 1 week      	|  ✅	| Fingerprint reader  	                |  ✖️ 	| Waydroid		|  ✖️	|
-| Torchlight                    	|  ✖️✖️ 	| Boot into UI                     	|  ✅ 	| GPS                 	|  ✅✖️ 	|
+| Torchlight                    	|  ✅✖️ 	| Boot into UI                     	|  ✅ 	| GPS                 	|  ✅✖️ 	|
 | Vibration                     	|  ✅ 	| Hardware video playback          	|  ✅ 	| Proximity          	|  ✖️ 	|
-| Flashlight                    	|  ✖️✖️ 	| Anbox patches                    	|  ✅ 	| Rotation            	|  ✅ 	|
+| Flashlight                    	|  ✅✖️ 	| Anbox patches                    	|  ✅ 	| Rotation            	|  ✅ 	|
 | Photo                         	|  ✖️✖️ 	| AppArmor patches                 	|  ✅ 	| Touchscreen          	|  ✅ 	|
 | Video                         	|  ✖️✖️ 	| Battery percentage               	|  ✅ 	| Earphones           	|  ✅✖️ 	|
 | Switching between cameras     	|  ✖️✖️ 	| Offline charging                 	|  ✅ 	| Loudspeaker          	|  ✅ 	|
@@ -43,9 +43,6 @@
 - Download our customized version of OrangeFox recovery [OrangeFox-R11-garden-droidian.img](https://garden.bardia.tech/OrangeFox-R11-garden-droidian.img)
 
 ## Dandelion installation
-- Erase system partiiton: `fastboot erase system`
-- Erase product partition: `fastboot erase product`
-- Resize product partition: `fastboot resize-logical-partition product 170000`
 - Flash boot-dandelion.img: `fastboot flash boot boot-dandelion.img`.
 - Flash dtbo-dandelion.img: `fastboot flash dtbo dtbo-dandelion.img`.
 - Flash vbmeta-dandelion.img: `fastboot --disable-verity --disable-verification flash vbmeta vbmeta-dandelion.img`.
@@ -66,9 +63,6 @@
 - *The first boot will take a while.*
 
 ## Angelica installation
-- Erase system partiiton: `fastboot erase system`
-- Erase product partition: `fastboot erase product`
-- Resize product partition: `fastboot resize-logical-partition product 170000`
 - Flash boot-angelica.img: `fastboot flash boot boot-angelica.img`.
 - Flash dtbo-angelica.img: `fastboot flash dtbo dtbo-angelica.img`.
 - Flash vbmeta-dandelion.img: `fastboot --disable-verity --disable-verification flash vbmeta vbmeta-angelica.img`.
@@ -106,6 +100,7 @@
 - When a headphone is plugged in audio output must be changed manually in the settings.
 - Dual SIM functionality is currently not implemented in Phosh so only one SIM works at the moment.
 - Just like bluetooth, hotspot does not work from settings either and has to be used from a GUI application (such as the default advanced network app) or from terminal.
+- Flashlight can be used via the desktop icons only.
 
 ## Final notes
 - I'm not responsible for bricked devices, dead SD cards, thermonuclear war, or you getting fired because the alarm app failed.
