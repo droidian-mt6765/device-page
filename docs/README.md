@@ -32,14 +32,14 @@
 
 ## Dandelion
 - Download the latest rootfs:  [droidian-OFFICIAL-phosh-phone-rootfs-api29-armhf-nightly_XXXXXXXX.zip](https://github.com/droidian-images/droidian/releases/tag/nightly).
-- Download the adaptation package: [adaptation-droidian-garden.zip](https://garden.bardia.tech/adaptation-droidian-garden.zip).
-- Download [boot-dandelion.img](https://garden.bardia.tech/boot-dandelion.img), [dtbo-dandelion.img](https://garden.bardia.tech/dtbo-dandelion.img), [vbmeta-dandelion.img](https://garden.bardia.tech/vbmeta-dandelion.img).
+- Download the adaptation package: [adaptation-droidian-garden.zip](https://github.com/droidian-mt6765/adaptation-droidian-garden/releases/download/adaptation/adaptation-droidian-garden.zip).
+- Download [boot-dandelion.img](https://github.com/droidian-mt6765/kernel-xiaomi-mt6765/releases/download/dandelion/boot-dandelion.img), [dtbo-dandelion.img](https://github.com/droidian-mt6765/kernel-xiaomi-mt6765/releases/download/dandelion/dtbo-dandelion.img), [vbmeta-dandelion.img](https://github.com/droidian-mt6765/kernel-xiaomi-mt6765/releases/download/dandelion/vbmeta-dandelion.img).
 - Download our customized version of OrangeFox recovery [OrangeFox-R11-garden-droidian.img](https://garden.bardia.tech/OrangeFox-R11-garden-droidian.img)
 
 ## Angelica
 - Download the latest rootfs:  [droidian-OFFICIAL-phosh-phone-rootfs-api29-armhf-nightly_XXXXXXXX.zip](https://github.com/droidian-images/droidian/releases/tag/nightly).
-- Download the adaptation package: [adaptation-droidian-garden.zip](https://garden.bardia.tech/adaptation-droidian-garden.zip).
-- Download [boot-dandelion.img](https://garden.bardia.tech/boot-angelica.img), [dtbo-dandelion.img](https://garden.bardia.tech/dtbo-angelica.img), [vbmeta-dandelion.img](https://garden.bardia.tech/vbmeta-angelica.img).
+- Download the adaptation package: [adaptation-droidian-garden.zip](https://github.com/droidian-mt6765/adaptation-droidian-garden/releases/download/adaptation/adaptation-droidian-garden.zip).
+- Download [boot-angelica.img](https://github.com/droidian-mt6765/kernel-xiaomi-mt6765/releases/download/angelica/boot-angelica.img), [dtbo-angelica.img](https://github.com/droidian-mt6765/kernel-xiaomi-mt6765/releases/download/angelica/dtbo-angelica.img), [vbmeta-angelica.img](https://github.com/droidian-mt6765/kernel-xiaomi-mt6765/releases/download/angelica/vbmeta-angelica.img).
 - Download our customized version of OrangeFox recovery [OrangeFox-R11-garden-droidian.img](https://garden.bardia.tech/OrangeFox-R11-garden-droidian.img)
 
 ## Dandelion installation
@@ -53,7 +53,7 @@
 - Go into sideload mode and sideload adaptation-droidian-garden.zip: `adb sideload adaptation-droidian-garden.zip`
 - Now boot into your device.
 - If for some reason sideload or recovery did not work out for you should try my second installation method:
-- Download the adaptation script (not the adaptation package): [adaptation-garden-script.zip] (https://garden.bardia.tech/adaptation-garden-script.zip).
+- Download the adaptation script (not the adaptation package): [adaptation-garden-script.zip] (https://github.com/droidian-mt6765/adaptation-garden-script/releases/download/adaptation/adaptation-garden-script.zip).
 - Download PBRP: [PBRP-3.1.0.img] (https://garden.bardia.tech/PBRP-3.1.0.img)
 - Flash PBRP-3.1.0.img: `fastboot flash recovery PBRP-3.1.0.img`.
 - Now boot into recovery
@@ -73,7 +73,7 @@
 - Go into sideload mode and sideload adaptation-droidian-garden.zip: `adb sideload adaptation-droidian-garden.zip`
 - Now boot into your device.
 - If for some reason sideload or recovery did not work out for you should try my second installation method: 
-- Download the adaptation script (not the adaptation package): [adaptation-garden-script.zip] (https://garden.bardia.tech/adaptation-garden-script.zip).
+- Download the adaptation script (not the adaptation package): [adaptation-garden-script.zip] (https://github.com/droidian-mt6765/adaptation-garden-script/releases/download/adaptation/adaptation-garden-script.zip).
 - Download PBRP: [PBRP-3.1.0.img] (https://garden.bardia.tech/PBRP-3.1.0.img)
 - Flash PBRP-3.1.0.img: `fastboot flash recovery PBRP-3.1.0.img`.
 - Now boot into recovery 
