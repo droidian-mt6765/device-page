@@ -3,13 +3,13 @@
 |                               	|    	|                                  	|    	|                      	|   	|
 |-------------------------------	|----	|----------------------------------	|----	|----------------------	|---	|
 | Manual brightnes              	|  ✅ 	| Battery lifetime > 24h from 100% 	|  ✅ 	| Automatic brightness  |  ✖️ 	|
-| No reboot needed for 1 week      	|  ✅	| Fingerprint reader  	                |  ✖️ 	| Waydroid		|  ✖️	|
-| Torchlight                    	|  ✅✖️ 	| Boot into UI                     	|  ✅ 	| GPS                 	|  ✅✖️ 	|
+| No reboot needed for 1 week      	|  ✅	| Fingerprint reader  	                |  ✖️ 	| Waydroid		|  ✅	|
+| Torchlight                    	|  ✅✅	| Boot into UI                     	|  ✅ 	| GPS                 	|  ✖️ 	|
 | Vibration                     	|  ✅ 	| Hardware video playback          	|  ✅ 	| Proximity          	|  ✖️ 	|
 | Flashlight                    	|  ✅✖️ 	| Anbox patches                    	|  ✅ 	| Rotation            	|  ✅ 	|
-| Photo                         	|  ✖️✖️ 	| AppArmor patches                 	|  ✅ 	| Touchscreen          	|  ✅ 	|
-| Video                         	|  ✖️✖️ 	| Battery percentage               	|  ✅ 	| Earphones           	|  ✅✖️ 	|
-| Switching between cameras     	|  ✖️✖️ 	| Offline charging                 	|  ✅ 	| Loudspeaker          	|  ✅ 	|
+| Photo                         	|  ✅✖️ 	| AppArmor patches                 	|  ✅ 	| Touchscreen          	|  ✅ 	|
+| Video                         	|  ✅✖️  | Battery percentage               	|  ✅ 	| Earphones           	|  ✅✖️ 	|
+| Switching between cameras     	|  ✅✖️ 	| Offline charging                 	|  ✅ 	| Loudspeaker          	|  ✅ 	|
 | Dual SIM functionality        	|  ✖️✖️	| Online charging                  	|  ✅ 	| Microphone          	|  ✅ 	|
 | Carrier info, signal strength 	|  ✅✖️ 	| SD card detection and access     	|  ✅ 	| Volume control       	|  ✅ 	|
 | Data connection               	|  ✅✖️ 	| RTC time                         	|  ✅ 	| Pin unlock           	|  ✅ 	|
@@ -93,14 +93,13 @@
 - Mobile data might stop working after making or recieving phone calls. Toggle Mobile Data from the settins off/on.
 - Mobile data quick toggle doesn't work.
 - Bluetooth can be used via the terminal using bluetoothctl command or using blueman **sudo apt install blueman** but does not work via the settings app.
-- GPS works partially via Epiphany (tested with open street map).
+- GPS doesn't work.
 - Signal strengh is reported at 1% but Mobile data and calls work just fine.
-- Anything related to cameras do not work it is a global issue across all devices, it does however work in Waydroid which is currently not available on angelica and dandelion.
+- Anything related to cameras only works in Waydroid which.
 - Changing audio to speaker in calls does not work on dandelion but works on angelica.
 - When a headphone is plugged in audio output must be changed manually in the settings.
 - Dual SIM functionality is currently not implemented in Phosh so only one SIM works at the moment.
 - Just like bluetooth, hotspot does not work from settings either and has to be used from a GUI application (such as the default advanced network app) or from terminal.
-- Flashlight can be used via the desktop icons only.
 
 ## Final notes
 - I'm not responsible for bricked devices, dead SD cards, thermonuclear war, or you getting fired because the alarm app failed.
@@ -110,4 +109,3 @@
 # Support
 - Device specific telegram group: [@ut_angelica](https://t.me/ut_angelica).
 - Droidian telegram group: [@DroidianLinux](https://t.me/DroidianLinux).
-
