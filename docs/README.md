@@ -41,10 +41,14 @@
 * run the `flash_all` script 
 * Boot to fastboot and let the script flash everything.
 
+## UBports Installer
+- Alternatively the UBports installer can also be used to install Droidian.
+
 ## Notes
 - The default password is `1234`.
 
 ## Bugs
+- Encryption is broken and it will soft brick the device.
 - Mobile data needs an APN to be set up from Settings -> Mobile -> Acess Point Names.
 - RIL gets broken after switching airplane mode or modem off/on.
 - Mobile data might stop working after making or recieving phone calls. Toggle Mobile Data from the settins off/on.
