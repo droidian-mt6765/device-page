@@ -36,13 +36,8 @@
 ## Angelica
 - Download the latest fastbootable image:  [droidian-UNOFFICIAL-phosh-phone-xiaomi_angelica-api29-armhf-nightly_XXXXXXXX.zip](https://github.com/droidian-mt6765/droidian-images-angelica/releases/tag/nightly).
 
-## Dandelion installation
+## Installation
 * Extract the archive
-* run the `flash_all` script
-* Boot to fastboot and let the script flash everything.
-
-## Angelica installation
-* Extract the archive  
 * run the `flash_all` script 
 * Boot to fastboot and let the script flash everything.
 
