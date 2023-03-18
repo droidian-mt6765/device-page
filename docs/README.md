@@ -48,19 +48,19 @@
 - The default password is `1234`.
 
 ## Bugs
-- Encryption is broken and it will soft brick the device.
-- Mobile data needs an APN to be set up from Settings -> Mobile -> Acess Point Names.
+- Encryption not supported
+- Mobile data needs an APN to be set up from Settings -> Mobile -> Access Point Names.
 - RIL gets broken after switching airplane mode or modem off/on.
-- Mobile data might stop working after making or recieving phone calls. Toggle Mobile Data from the settins off/on.
+- Mobile data might stop working after making or receiving phone calls. Toggle Mobile Data from the settins off/on.
 - Mobile data quick toggle doesn't work.
 - Bluetooth can be used via the terminal using bluetoothctl command or using blueman **sudo apt install blueman** but does not work via the settings app.
 - GPS doesn't work.
-- Signal strengh is reported at 1% but Mobile data and calls work just fine.
+- Signal strength is reported at 1% but Mobile data and calls work just fine.
 - Anything related to cameras only works in Waydroid.
 - Changing audio to speaker in calls does not work on dandelion but works on angelica.
 - When a headphone is plugged in audio output must be changed manually in the settings.
 - Dual SIM functionality is currently not implemented in Phosh so only one SIM works at the moment.
-- Just like bluetooth, hotspot does not work from settings either and has to be used from a GUI application (such as the default advanced network app) or from terminal.
+- Mobile hotspot does not work.
 
 ## Final notes
 - I'm not responsible for bricked devices, dead SD cards, thermonuclear war, or you getting fired because the alarm app failed.
